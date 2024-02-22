@@ -1,0 +1,22 @@
+.left-side{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+img{
+    width: 65px;
+    padding-bottom: -10px;
+}
+.auth-box{
+    border-color: black;
+    border-width: 2px;
+    width: 80%;
+}
+input {
+    border-color : #040308 ; 
+    padding: 10px 15px ;
+    border-width: 1px;
+    border-radius: 6px;
+}
+.mrt {
+    margin-top: 5px;
+}
