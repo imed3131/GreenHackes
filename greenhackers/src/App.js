@@ -1,17 +1,22 @@
-import { createBrowserRouter , createRoutesFromElements , Route , RouterProvider} from "react-router-dom" ;
-import './App.css';
-import Signup from "./pages/SignUp";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Signup from './pages/SignUp';
+import Signin from './pages/Signin';
+import Main from './pages/Main';
+import Files from './pages/Files';
+import Dep from './pages/Dep';
 function App() {
-  const router = createBrowserRouter (
-    createRoutesFromElements(
-      <Route path='/'>
-        <Route index element={ <Signup/> }  />
-      </Route>
-    )
-  )
   return (
     <div className="App">
-               <RouterProvider router={router} />
+      <Router>
+        <Routes>
+        {/* <Route path="/" element={<Signup />} /> */}
+          <Route path="/" element={<Signin />} />
+          <Route path='/main' element={<Main />} />
+          <Route path='/files' element={<Files />} />
+          <Route path='/Dep' element={<Dep />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class GreenAppConfig(AppConfig):
+class GreenConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'green_app'
+    name = 'green'

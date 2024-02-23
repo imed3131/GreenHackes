@@ -1,11 +1,15 @@
 import "../css/login.css"
 import logo from '../imgs/logo.png'
 import google from '../imgs/Google.png'
-import {useNavigate} from 'react-router-dom';
-const Signup = () => {
+import { useNavigate } from "react-router-dom"
+// import Signup from './SignUp';
+const Signin = () => {
     const navigate = useNavigate();
     const ChangePath = () => {
-        navigate("/login");
+        navigate("/");
+    };
+    const ChangeToMain = () => {
+        navigate("/main");
     };
     return (  
         <div className="flex flex-row h-screen">
@@ -34,19 +38,19 @@ const Signup = () => {
             <div className="basis-1/2 flex items-center justify-center relative ">
                  <div className="auth-box flex flex-col">
                     <div className="">
-                        <p className="text-balck text-4xl text-left font-bold">Create account</p>
-                        <p className="text-black text-sm text-left ">Already have an account ? <span onClick={ChangePath} className="text-cyan-400 login"> Login </span> </p>
+                        <p className="text-balck text-4xl text-left font-bold">Sign in</p>
+                        <p className="text-black text-sm text-left ">don't have an Account ? <span onClick={ChangePath} className="text-cyan-400 create"> Create </span> </p>
                     </div>
                     <div className="mt-3">
                         <div className="flex flex-col space-y-3">
-                            <div className="flex flex-row space-x-4">
+                            {/* <div className="flex flex-row space-x-4">
                                     <div className="basis-1/2 relative">
                                         <input type="text" className="w-full inputs" placeholder="First name" required />
                                     </div>
                                     <div className="basis-1/2 relative ">
                                         <input type="text" className="w-full inputs" placeholder="Last name"  required />
                                     </div>
-                            </div>
+                            </div> */}
                             <div className="">
                                 <input type="email" className="w-full inputs" placeholder="Email"  required />
                             </div>
@@ -64,7 +68,7 @@ const Signup = () => {
                     <div className="mt-3  buttons">
                         <div  className="flex flex-col space-y-3">
                             <div>
-                            <input className="text-white bg-black" type="button" value="Create Account" />
+                            <input onClick={ChangeToMain} className="text-white bg-black" type="button" value="Login" />
                             </div>
                             <div>
                                 <hr />
@@ -77,7 +81,7 @@ const Signup = () => {
                             <div>
                             <button  className="relative">
                                 <img className="google" src={google} alt="" />
-                                <span className="font-medium">Continue with google</span>
+                                <span className="font-medium ">Continue with google</span>
                             </button>
                             </div>
                         </div>
@@ -89,4 +93,4 @@ const Signup = () => {
     );
 }
  
-export default Signup;
+export default Signin;

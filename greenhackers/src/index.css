@@ -8,9 +8,157 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #1D1C34; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main-container {
+  background-color: #1D1C34;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex; 
+}
+.files-container {
+  background-color: #1D1C34;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex; 
+}
+.side-bar{
+  flex: 1;
+  background-color:#070C38 ;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent; 
+  border-image: linear-gradient(to right, rgba(128, 0, 128, 0.199), rgba(255, 192, 203, 0.153)); 
+  border-image-slice: 1; 
+  border-radius: 20px;
+  width: 100%;
+}
+.b{
+  color: rgb(140 149 184 / 67%);
+}
+.b:hover{
+  color: white;
+}
+.f{
+  margin-top: 0px;
+}.title main{
+  display: flex;
+}
+.logoBar{
+  margin-right: 30px;
+}
+.logoBar:hover{
+  color: white;
+}
+.title_container{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 5px;
+  height: auto;
+  margin-right: 10px;
+}
+.title1{
+  font-size: 22px
+}
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container{
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left:30px;
+  margin-right:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore_dev{
+  background-color: #323C63;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding:10px 5px;
+  border-radius: 30px;
+  border: 1px #495892 solid;
+}
+.logos{
+  display: flex;
+  align-items: center;
+}
+.notification{
+margin-right: 20px;
+}
+/* .circle{
+  width: 20px;
+  height: 20px;
+  border: 1px darkblue solid;
+  border-radius: 50%;
+  /* margin-right: 80px; */
+
+/* .search{
+  display: flex;
+  align-items: center;
+} */
+
+.cards{
+  /* background-color: #2C2A58;
+  border-radius: 10px;
+  border: 1px solid #4C4898; */
+  width: 670px;
+  height: 100px;
+  margin-top: 20px;
+}
+.container_card{
+ display: flex;
+ justify-content: space-between;
+}
+.google_logo{
+  width: 20px;
+  height: 20px;
+}
+.edge{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.title2{
+  font-size: 22px;
+  font-weight: bold;
+}
+.pp{
+  color: rgba(180, 190, 231, 0.67);
+}
+.hidden_card{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.dropDown{
+  /* margin-top:  30px; */
+  /* background-color: #2C2A58; */
+  background:  linear-gradient(to bottom , #2C2A58 , #1D1C34 );
+  border-radius: 10px;
+  border: 1px solid #4C4898;
+}
+.nn{
+  font-size: 15px;
+}
+.topBar{
+  margin-bottom: 30px;
 }
